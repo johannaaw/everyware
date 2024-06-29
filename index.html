@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EveryWare</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<nav>
+    <div><a id="onpage" href="index.html">Dashboard</a></div>
+    <div><a href="Inventory.html">Inventory</a></div>
+    <div><a href="Finance.html">Finance</a></div>
+    <div><a href="Settings.html">Settings</a></div>
+    <div><a href="Profile.html">Profile</a></div>
+</nav>
+
+<section>
+    <div class="header">
+        <div class="company-logo">
+            <img class="logo-img" src="Asset/braizen-logo.png" alt="company's logo">
+            <div>
+                <h1>Braizen Craft</h1>
+                <h5>You need it, we got it</h6>
+            </div>
+        </div>
+        <div class="profit">
+            <span>Profit: </span>
+            <span id="percent">20%</span>
+        </div>
+        <div>
+            <img class="everyware" src="Asset/everyware.png" alt="rebrand">
+        </div>
+
+    </div>
+
+
+    <div class="upper">
+        <p class="sale-title">June's Overview</p>
+        <div class="adjacent">
+            <div class="sale-overview">
+                <p class="atas">Total Items</p>
+                <p class="bawah">875</p>
+            </div>
+            <div class="sale-overview">
+                <p class="atas">Total Products</p>
+                <p class="bawah">75</p>
+            </div>
+            <div class="sale-overview">
+                <p class="atas">Total Categories</p>
+                <p class="bawah">20</p>
+            </div>
+        </div>
+        <div class="adjacent">
+            <div class="sale-overview">
+                <p class="atas">Working days</p>
+                <p class="bawah">20/22</p>
+            </div>
+            <div class="sale-overview">
+                <p class="atas">Warehouse</p>
+                <p class="bawah">3 Warehouse</p>
+            </div>
+            <div class="sale-overview">
+                <p class="atas">Income</p>
+                <p class="bawah">$1035</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="bottom">
+        <p class="title">Inventory Charts</p>
+        <div class="chart-category">
+            <img data-enlargable class="chart" src="Asset/charts/chart1.png" alt="">
+            <img data-enlargable class="chart" src="Asset/charts/chart2.png" alt="">
+            <img data-enlargable class="chart" src="Asset/charts/chart3.png" alt="">
+            <img data-enlargable class="chart" src="Asset/charts/chart4.png" alt="">
+        </div>
+    </div>
+
+    <div id="faq_button" onclick="alert('To Guide Book')">?</div>
+
+</section>
+    
+</body>
+<script src="Dashboard.js"></script>
+</html>
