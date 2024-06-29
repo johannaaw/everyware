@@ -1,0 +1,214 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #353935;
+}
+
+head{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    background-color: #f2f0e6;
+    padding: 0;
+}
+
+nav{
+    background-color: #353935;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#onpage{
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #f2f0e6;
+    color: #797871;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+a{
+    text-decoration: none;
+    color: #939f89;
+    font-size: large;
+}
+
+a:hover{
+    color: white;
+}
+
+.logo-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+h1{
+    margin: 20px;
+    font-size: xx-large;
+}
+h5{
+    margin: 20px;
+    font-size: larger;
+}
+
+.company-logo{
+    display: flex;
+    margin: 20px;
+}
+
+.everyware{
+    width: 200px;
+}
+
+.header{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart{
+    height: 150px;
+    margin: 10px;
+    border-radius: 20px;
+    
+}
+.chart:hover{
+    border: 1px solid #353935;
+    transform: scale(1.8);
+    
+}
+
+
+.img-enlargable {
+    cursor: zoom-in;
+}
+
+.chart-logo{
+    display: flex;
+    justify-content: space-around;
+}
+
+.chart-category{
+    padding: 20px;
+}
+
+.sale-title{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: #939f89;
+}
+
+.sale{
+    background-color: bisque;
+    width: 900px;
+    height: 200px;
+    margin: 10px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+
+.upper{
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: left;
+    text-align: center;
+}
+
+.adjacent{
+    display: flex;
+    justify-content: center;
+}
+
+.sale-overview{
+    width: 23%;
+    margin: 20px;
+    background-color: bisque;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(255,255,255);
+}
+
+.atas{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.bawah{
+    font-size: large;
+    font-weight: 400;
+}
+
+
+.profit{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* .sale:hover, .profit:hover{
+    border: 3px solid #353935;
+} */
+
+
+.profit p{
+    font-size: xxx-large;
+    font-style: oblique;
+    display: flex;
+    justify-content: center;
+}
+#percent:hover{
+    font-weight: bolder;
+    transform: scale(1.15);
+}
+.profit span{
+    margin: 10px;
+}
+
+#percent{
+    font-size: 80px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.title{
+    font-size: x-large;
+    font-weight: bold;
+   color: #939f89;
+}
+
+
+
+#faq_button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: burlywood;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+}

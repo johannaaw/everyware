@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <link rel="stylesheet" href="Inventory.css">
+</head>
+<body>
+<nav>
+    <div><a href="index.html">Dashboard</a></div>
+    <div><a id="onpage" href="Inventory.html">Inventory</a></div>
+    <div><a href="Finance.html">Finance</a></div>
+    <div><a href="Settings.html">Settings</a></div>
+    <div><a href="Profile.html">Profile</a></div>
+</nav>
+<section>
+    <h1>Inventory</h1>
+    <div class="adjacent">
+    <div class="card-container">
+        <div class="card" data-stock="30" data-sold="27">
+            <img src="Asset/interview.jpg" alt="Item 1">
+            <div class="card-content">
+                <h2>Item 1</h2>
+                <p>Description of item 1.</p>
+                <p>Stock: 30</p>
+                <p>Price: $10.00</p>
+                <p>Sold: 27</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-stock="56" data-sold="17">
+            <img src="Asset/njpc.jpg" alt="Item 2">
+            <div class="card-content">
+                <h2>Item 2</h2>
+                <p>Description of item 2.</p>
+                <p>Stock: 56</p>
+                <p>Price: $20.00</p>
+                <p>Sold: 17</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card" data-stock="75" data-sold="50">
+            <img src="Asset/sanrio.jpg" alt="Item 3">
+            <div class="card-content">
+                <h2>Item 3</h2>
+                <p>Description of item 3.</p>
+                <p>Stock: 75</p>
+                <p>Price: $20.00</p>
+                <p>Sold: 50</p>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="add_button" onclick="openModal()">+</div>
+    <div id="addItemModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Add New Item</h2>
+            <form id="addItemForm">
+                <label for="itemName">Name:</label>
+                <input type="text" id="itemName" name="itemName" required>
+                <label for="itemDescription">Description:</label>
+                <input type="text" id="itemDescription" name="itemDescription" required>
+                <label for="itemStock">Stock:</label>
+                <input type="number" id="itemStock" name="itemStock" required>
+                <label for="itemPrice">Price:</label>
+                <input type="number" step="0.01" id="itemPrice" name="itemPrice" required>
+                <label for="itemSold">Sold:</label>
+                <input type="number" id="itemSold" name="itemSold" required>
+                <label for="itemImage">Image:</label>
+                <input type="file" id="itemImage" name="itemImage" accept="image/*" required>
+                <img id="imagePreview" style="display:none; width:100px; height:100px; margin-top:10px;">
+                <input type="submit" value="Add Item">
+            </form>
+        </div>
+    </div>
+    <div id="productDetailModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProductDetailModal()">&times;</span>
+            <h2 id="modalItemName"></h2>
+            <div class="flex-container">
+                <img id="modalItemImage" style="width: 300px; height: 300px; margin-top: 10px;">
+                <div class="extra-details">
+                    <img class="edit" onclick="alert('Edit item details')" src="Asset/edit.png" alt="">
+                    <p id="modalItemDescription"></p>
+                    <p id="modalItemStock"></p>
+                    <p id="modalItemPrice"></p>
+                    <p id="modalItemSold"></p>
+                </div>
+            </div>
+            <p>Supplier: <span id="modalItemSupplier"></span></p>
+            <p>Last Restock Date: <span id="modalItemRestockDate"></span></p>
+            <canvas id="barcodeCanvas" width="400" height="100"></canvas>
+            <canvas id="salesPlot" width="400" height="300"></canvas>
+        </div>
+    </div>
+</section>
+<script src="Inventory.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

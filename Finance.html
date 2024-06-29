@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <link rel="stylesheet" href="finance.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<nav>
+    <div><a href="index.html">Dashboard</a></div>
+    <div><a href="Inventory.html">Inventory</a></div>
+    <div><a id="onpage" href="Finance.html">Finance</a></div>
+    <div><a href="Settings.html">Settings</a></div>
+    <div><a href="Profile.html">Profile</a></div>
+</nav>
+<section class="finance-container">
+    <div class="finance-section">
+        <h2>Today's Profit</h2>
+        <div class="finance-details">
+            <p>Earnings: $<span id="earnings">1000</span></p>
+            <p>Spending: $<span id="spending">200</span></p>
+            <p>Profit: $<span id="profit">800</span></p>
+            <p>Loss: $<span id="loss">0</span></p>
+        </div>
+        <canvas id="todayProfitChart"></canvas>
+    </div>
+    <div class="finance-section">
+        <h2>Total Financial Summary</h2>
+        <div class="finance-details">
+            <p>Expenses: $<span id="expenses">5000</span></p>
+            <p>Revenue: $<span id="revenue">10000</span></p>
+            <p>Gross Profit: $<span id="grossProfit">5000</span></p>
+        </div>
+        <canvas id="financialSummaryChart"></canvas>
+    </div>
+</section>
+<button id="reportButton">Generate Report</button>
+<script src="finance.js"></script>
+</body>
+</html>

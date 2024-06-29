@@ -1,0 +1,81 @@
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 50px auto;
+}
+
+.online{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: block;
+    margin: 50px auto;
+}
+
+hr{
+    color: #353935;
+}
+
+.owner p{
+    padding: 0;
+    margin: 0;
+}
+
+.owner{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+#owner-name{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.profile img{
+    padding: 0;
+    margin: 50;
+}
+
+
+.employee-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.employee-img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.employee{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.employee-name{
+    padding-top: 40px;
+    width: 400px;
+}
+
+.edit{
+    height: 30px;
+    width: 30px;
+    border-radius: 0;
+}
+
+.edit:hover{
+    transform: scale(1.15);
+}
+
+.title{
+    padding-left: 50px;
+}
