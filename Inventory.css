@@ -152,14 +152,14 @@ form input[type="submit"] {
 }
 
 form input[type="submit"] {
-    background-color: #01a9fe;
+    background-color: burlywood;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 form input[type="submit"]:hover {
-    background-color: #036ca1;
+    background-color: rgb(214, 173, 118);
 }
 
 #imagePreview {
